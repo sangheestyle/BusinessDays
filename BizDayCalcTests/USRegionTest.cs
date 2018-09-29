@@ -24,7 +24,7 @@ namespace BizDayCalcTests
         public void TestHolidays(string date)
         {
             output.WriteLine($@"TestHolidays(""{date}"")"); 
-            Assert.True(fixture.Calc.IsBusinessDay(DateTime.Parse(date)));
+            Assert.False(fixture.Calc.IsBusinessDay(DateTime.Parse(date)));
         }
 
         [Theory]
